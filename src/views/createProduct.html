@@ -13,24 +13,24 @@
     <header class="header">
         <div class="header__primer-fila">
             <div>
-                <a href="index.html"><img src="../images/Game-Soul.png" alt="logo" class="header__logo"></a>
+                <a href="index.html"><img src="../images/logo/Game-Soul.png" alt="logo" class="header__logo"></a>
             </div>
 
             <form class="cont-search">
                 <input type="search" placeholder="Dime que juego buscas" class="cont-search__input" id="search">
-                <label for="search"><img src="../images/search.svg" class="cont-search__i"></label> 
+                <label for="search"><img src="../images/iconos/search.svg" class="cont-search__i"></label> 
             </form>
 
             <div class="cont-i">
                 <div class="cont-i__cont-lista-icono">
-                    <img src="../images/user.svg" class="cont-i__iconos con-i__iconos--user">
+                    <img src="../images/iconos/user.svg" class="cont-i__iconos con-i__iconos--user">
                     <ul class="cont-i__lista">
                         <li class="cont-i__items cont-i__items-log"><a href="/login" class="cont-i__enlaces">Login</a></li>
                         <li class="cont-i__items"><a href="/register" class="cont-i__enlaces">Register</a></li>
                     </ul>
                 </div>
-                <a href="productCart.html"><img src="../images/shop.svg" class="cont-i__iconos"></a>
-                <img src="../images/burger-menu.svg" class="cont-i__iconos cont-i__iconos--burger-menu">
+                <a href="productCart.html"><img src="../images/iconos/shop.svg" class="cont-i__iconos"></a>
+                <img src="../images/iconos/burger-menu.svg" class="cont-i__iconos cont-i__iconos--burger-menu">
             </div>
         </div>
 
@@ -45,50 +45,52 @@
         </nav>
     </header>
 
-    <form action="" method="post" class="formCreateProduct">
-        <div class="form__seccion-nombre">
-            <span>Nombre del producto:</span>
-            <input type="text" name="nombreDelProductoCreado" placeholder="Nombre del producto..." required>
-        </div>
-
-        <div class="form__seccion-descripcion">
-            <span>Descripción del producto:</span>
-            <input type="textarea" name="descripcionDelProductoCreado" placeholder="Descripción del producto..." required>
-        </div>
-
-        <div class="form__seccion-img">
-            <span>Inserta una imagen:</span>
-            <input type="file" accept=".png, .jpg" multiple name="imagenDelProductoCreado" required>
-        </div>
-
-        <div class="form__seccion-categoria">
-            <span>Selecciona un género:</span>
-            <select name="generoDelProductoCreado" required>
-                <option value="accion">Acción</option>
-                <option value="aventura">Aventura</option>
-                <option value="fps">FPS</option>
-                <option value="estrategia">Estrategia</option>
-                <option value="deportes">Deportes</option>
-            </select>
-        </div>
-
-        <div class="form__seccion-edicion">
-            <span>Selecciona una edición:</span>
-            <select name="edicionDelProductoCreado" required>
-                <option value="estandar">Estándar</option>
-                <option value="coleccionista">Coleccionista</option>
-            </select>
-        </div>
-
-        <div class="form__seccion-precio">
-            <span>Escribe un precio:</span>
-            <input type="text" name="precioDelProductoCreado" required>
-        </div>
-
-        <div class="form__seccion-inputCrear">
-            <input type="submit" value="Crear Producto">
-        </div>
-    </form>
+    <main>
+        <form action="" method="post" class="formCreateProduct">
+            <div class="form__seccion-nombre">
+                <span>Nombre del producto:</span>
+                <input type="text" name="nombreDelProductoCreado" placeholder="Nombre del producto..." required>
+            </div>
+    
+            <div class="form__seccion-descripcion">
+                <span>Descripción del producto:</span>
+                <input type="textarea" name="descripcionDelProductoCreado" placeholder="Descripción del producto..." required>
+            </div>
+    
+            <div class="form__seccion-img">
+                <span>Inserta una imagen:</span>
+                <input type="file" accept=".png, .jpg" multiple name="imagenDelProductoCreado" required>
+            </div>
+    
+            <div class="form__seccion-categoria">
+                <span>Selecciona un género:</span>
+                <select name="generoDelProductoCreado" required>
+                    <option value="accion">Acción</option>
+                    <option value="aventura">Aventura</option>
+                    <option value="fps">FPS</option>
+                    <option value="estrategia">Estrategia</option>
+                    <option value="deportes">Deportes</option>
+                </select>
+            </div>
+    
+            <div class="form__seccion-edicion">
+                <span>Selecciona una edición:</span>
+                <select name="edicionDelProductoCreado" required>
+                    <option value="estandar">Estándar</option>
+                    <option value="coleccionista">Coleccionista</option>
+                </select>
+            </div>
+    
+            <div class="form__seccion-precio">
+                <span>Escribe un precio:</span>
+                <input type="text" name="precioDelProductoCreado" required>
+            </div>
+    
+            <div class="form__seccion-inputCrear">
+                <input type="submit" value="Crear Producto">
+            </div>
+        </form>
+    </main>
 
 
 

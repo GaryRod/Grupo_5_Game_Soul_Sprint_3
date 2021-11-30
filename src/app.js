@@ -8,7 +8,7 @@ console.log("Servidor funcionando")
 });
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/views/home.html');
+    res.sendFile(__dirname + '/views/index.html');
 })
 
 app.get('/login', (req, res) => {
@@ -25,4 +25,8 @@ app.get('/productCart', (req, res) => {
 
 app.get('/productDetail', (req, res) => {
     res.sendFile(__dirname + '/views/productDetail.html');
+})
+
+app.get('/createProduct', (req, res) => {
+    res.sendFile(__dirname + '/views/createProduct.html');
 })
