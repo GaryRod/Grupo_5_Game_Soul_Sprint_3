@@ -402,7 +402,7 @@
     font-size: 20px; 
 }
 
-.form__input {
+.form__input-login {
     padding: 5px;
     margin: 5px;
     border-radius: 10px;
@@ -464,6 +464,47 @@ cursor: pointer
     background-color: #476072;
     color: white;
 }
+
+/* Sección Crear Producto */
+
+.main--createProduct{
+    margin-bottom: 20px;
+}
+
+.formCreateProduct {
+    width: 60%;
+    background-color: #eee;
+    border-radius: 50px;
+    color: #000;
+    margin: 0 auto;
+}
+
+.form__seccion-h5 {
+    text-align: center;
+    margin: 1%;
+}
+
+.input__create-product {
+    width: 60%;
+    margin: 0 0 0 20%;
+}
+
+.boton-enviar-producto {
+    margin: 5% 0 5% 25%;
+    padding: 2%;
+    border-radius: 50px;
+    transition: all 0.5s;
+}
+
+.boton-enviar-producto:hover {
+    background-color: #476072;
+    color: #eee;
+}
+
+select {
+    width: 50%;
+}
+
 
 /* Footer */
 .footer{
@@ -688,8 +729,19 @@ cursor: pointer
         justify-content: space-between;
     }
 
-    .form__input {
+    .form__input-login {
         width: 50%;
+    }
+
+    /* Sección Crear Producto */
+
+    .main--createProduct {
+        margin-top: 25%;
+        margin-bottom: 3%;
+    }
+
+    .boton-enviar-producto {
+        margin: 5% 0 5% 28%;
     }
 
     /* Footer */
@@ -748,7 +800,7 @@ cursor: pointer
         margin: 2% 0 0 20%;
     }
 
-    .form__input {
+    .form__input-login {
         width: 50%;
     }
 
@@ -757,6 +809,16 @@ cursor: pointer
     }
     .form__tercera-seccion {
         gap: 50px;
+    }
+
+    /* Sección Crear Producto */
+
+    .main--createProduct {
+        margin-top: 15%;
+    }
+
+    .boton-enviar-producto {
+        margin: 5% 0 5% 35%;
     }
 
     /* Footer */
@@ -776,7 +838,7 @@ cursor: pointer
         padding-bottom: 1%;
     }
 
-    .form__input {
+    .form__input-login {
         width: 65%;
     }
 
@@ -792,7 +854,23 @@ cursor: pointer
     .form__tercera-seccion {
         gap: 7%;
     }
+
+    /* Sección Crear Producto */
+
+    .main--createProduct {
+        margin-top: 10%;
+    }
+
+    .formCreateProduct {
+        max-width: 50%;
+        margin: 0 0 0 25%;
+    }
+
+    .boton-enviar-producto {
+        margin: 5% 0 5% 40%;
+    }
 }
+
 
 
 /*Comienza Registro*/
