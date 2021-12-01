@@ -8,10 +8,6 @@
 
 /* Celulares chicos, 361px */
 
-.main__crear-producto {
-    margin-top: 20%;
-}
-
 .body{
     width: 100%;
     height: 100vh;
@@ -170,13 +166,22 @@
     color: #548ca8;
 }
 
+.main{
+    margin-top: 120px
+}
+
+.main--createProduct{
+    margin-bottom: 20px;
+}
+
 /* Formulario de Crear Producto */
 
 .formCreateProduct {
-    
+    width: 60%;
     background-color: #eee;
     border-radius: 50px;
     color: #000;
+    margin: 0 auto;
 }
 
 h5 {
