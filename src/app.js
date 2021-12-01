@@ -27,6 +27,6 @@ app.get('/productDetail', (req, res) => {
     res.sendFile(__dirname + '/views/productDetail.html');
 })
 
-app.get('/crearproducto', (req, res) => {
+app.get('/createProduct', (req, res) => {
     res.sendFile(__dirname + '/views/createProduct.html');
 })
