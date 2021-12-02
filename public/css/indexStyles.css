@@ -633,256 +633,6 @@ select {
     border-radius: 45%;
     padding: 10px;
 }
-
-/* Media queries */
-@media (min-width: 480px ) {
-    .cont-i__iconos--burger-menu{
-        display: none;
-    }
-
-    .header__lista{
-        flex-direction: row;
-    }
-    
-    .header__nav{
-        position: static;
-    }
-
-    .main{
-        margin-top: 120px;
-    }
-
-    .cont-search{
-        width: 50%;
-    }
-
-    /* Index */
-    .main--index{
-        padding: 0 3%
-    }
-    
-    .section-ppal__art{
-        flex-direction: row;
-        margin: 0 auto
-    }
-
-    .section-ppal__datos-imgs-button{
-        flex-direction: column;
-        padding:8px
-    }
-
-    .section-ppal__datos{
-        flex-direction: column;
-        justify-content: space-evenly;
-        height: 100%;
-    }
-
-    .section-ppal__spans{
-        text-align: left;
-    }
-
-    .section-ppal__spans--titulo{
-        text-align: center;
-        font-size: 25px;
-    }
-
-    .section-ppal__spans--precio{
-        border-left: none;
-        border-right: none;
-    }
-
-    .section-ppal__cont-div-imgs{
-        flex-direction: column;
-        gap: 3px;
-    }
-
-    .section-ppal__cont-imgs{
-        gap: 6px;
-    }
-
-    .section-ppal__datos-imgs-button{
-        max-width: 300px;
-    }
-
-    .section-sec__cont-picture-star{
-        width: 150px;
-        height: 150px;
-    }
-
-    .section-sec__cont-star{
-        left: -7px;
-    }
-
-    /* Login */
-
-    .logo-img {
-        width: 60%;
-    }
-
-    .form {
-        max-width: 65%;
-        border-radius: 50px;
-    }
-
-    .form__tercera-seccion {
-        flex-direction: row;
-        gap: 50px;
-        justify-content: space-between;
-    }
-
-    .form__input-login {
-        width: 50%;
-    }
-
-    /* Sección Crear Producto */
-
-    .main--createProduct {
-        margin-top: 25%;
-        margin-bottom: 3%;
-    }
-
-    .formCreateProduct {
-        padding: 5px;
-    }
-
-    .boton-enviar-producto {
-        margin: 5% 0 5% 28%;
-    }
-
-    /* Footer */
-    .footer__met-pago{
-        width: 50px;
-    }
-}
-
-@media (min-width: 769px) {
-    .body{
-        overflow-x: hidden;
-    }
-
-    .header__primer-fila{
-        padding: 5px 10px;
-    }
-
-    /* Index */
-    .section-sec__cont-arts{
-        overflow-x: visible;
-    }
-
-    .section-sec__cont-star{
-        top: 0;
-        left: 0;
-        background-color: rgba(73, 177, 218, 0.562);
-        opacity: 0;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: all .5s;
-    }
-    
-    .section-sec__cont-star:hover{
-        opacity: 1;
-    }
-    
-    .section-sec__star{
-        cursor: pointer;
-    }
-    
-    .section-sec__star:hover::after{
-        content: "Añadir a favoritos";
-        color: #eee;
-    }
-
-    /* Login */
-
-    .logo-img{
-        width: 150px;
-    }
-
-    .form {
-        margin: 2% 0 0 20%;
-    }
-
-    .form__input-login {
-        width: 50%;
-    }
-
-    .form__boton-enviar {
-        width: 200px;
-    }
-    .form__tercera-seccion {
-        gap: 50px;
-    }
-
-    /* Sección Crear Producto */
-
-    .main--createProduct {
-        margin-top: 15%;
-    }
-
-    .formCreateProduct {
-        padding: 5px;
-    }
-
-    .boton-enviar-producto {
-        margin: 5% 0 5% 35%;
-    }
-
-    /* Footer */
-    .footer__primer-fila{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-
-@media (min-width: 1280px) {
-
-    /* Login */
-
-    .form {
-        max-width: 50%;
-        margin: 1% 0 0 25%;
-        padding-bottom: 1%;
-    }
-
-    .form__input-login {
-        width: 65%;
-    }
-
-    .form__contenedor-subtitulos {
-        justify-content: space-evenly;
-        gap: 10%;
-    }
-
-    .form__boton-enviar {
-        width: 100%;
-    }
-
-    .form__tercera-seccion {
-        gap: 7%;
-    }
-
-    /* Sección Crear Producto */
-
-    .main--createProduct {
-        margin-top: 10%;
-    }
-
-    .formCreateProduct {
-        max-width: 50%;
-        padding: 10px;
-        margin: 0 0 0 25%;
-    }
-
-    .boton-enviar-producto {
-        margin: 5% 0 5% 39%;
-    }
-}
-
-
-
 /*Comienza Registro*/
 
 
@@ -918,7 +668,7 @@ select {
 
 .section-registro{
     background-color: #eee;
-    margin: 5%;
+    margin: 2%;
     border-radius: 25px;
 }
 
@@ -1117,7 +867,127 @@ select {
     padding: 10px;
 }
 
-@media (min-width: 480px){
+/* Media queries */
+@media (min-width: 480px ) {
+    .cont-i__iconos--burger-menu{
+        display: none;
+    }
+
+    .header__lista{
+        flex-direction: row;
+    }
+    
+    .header__nav{
+        position: static;
+    }
+
+    .main{
+        margin-top: 120px;
+    }
+
+    .cont-search{
+        width: 50%;
+    }
+
+    /* Index */
+    .main--index{
+        padding: 0 3%
+    }
+    
+    .section-ppal__art{
+        flex-direction: row;
+        margin: 0 auto
+    }
+
+    .section-ppal__datos-imgs-button{
+        flex-direction: column;
+        padding:8px
+    }
+
+    .section-ppal__datos{
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+    }
+
+    .section-ppal__spans{
+        text-align: left;
+    }
+
+    .section-ppal__spans--titulo{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .section-ppal__spans--precio{
+        border-left: none;
+        border-right: none;
+    }
+
+    .section-ppal__cont-div-imgs{
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .section-ppal__cont-imgs{
+        gap: 6px;
+    }
+
+    .section-ppal__datos-imgs-button{
+        max-width: 300px;
+    }
+
+    .section-sec__cont-picture-star{
+        width: 150px;
+        height: 150px;
+    }
+
+    .section-sec__cont-star{
+        left: -7px;
+    }
+
+    /* Login */
+
+    .logo-img {
+        width: 60%;
+    }
+
+    .form {
+        max-width: 65%;
+        border-radius: 50px;
+    }
+
+    .form__tercera-seccion {
+        flex-direction: row;
+        gap: 50px;
+        justify-content: space-between;
+    }
+
+    .form__input-login {
+        width: 50%;
+    }
+
+    /* Sección Crear Producto */
+
+    .main--createProduct {
+        margin-top: 25%;
+        margin-bottom: 3%;
+    }
+
+    .formCreateProduct {
+        padding: 5px;
+    }
+
+    .boton-enviar-producto {
+        margin: 5% 0 5% 28%;
+    }
+
+    /* Footer */
+    .footer__met-pago{
+        width: 50px;
+    }
+
+    /*Registro*/
 
     .email-registro{
         padding-right:11%;
@@ -1165,7 +1035,90 @@ select {
         width: 50px;
     }
 }
-@media (min-width: 769px){
+
+@media (min-width: 769px) {
+    .body{
+        overflow-x: hidden;
+    }
+
+    .header__primer-fila{
+        padding: 5px 10px;
+    }
+
+    /* Index */
+    .section-sec__cont-arts{
+        overflow-x: visible;
+    }
+
+    .section-sec__cont-star{
+        top: 0;
+        left: 0;
+        background-color: rgba(73, 177, 218, 0.562);
+        opacity: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .5s;
+    }
+    
+    .section-sec__cont-star:hover{
+        opacity: 1;
+    }
+    
+    .section-sec__star{
+        cursor: pointer;
+    }
+    
+    .section-sec__star:hover::after{
+        content: "Añadir a favoritos";
+        color: #eee;
+    }
+
+    /* Login */
+
+    .logo-img{
+        width: 150px;
+    }
+
+    .form {
+        margin: 2% 0 0 20%;
+    }
+
+    .form__input-login {
+        width: 50%;
+    }
+
+    .form__boton-enviar {
+        width: 200px;
+    }
+    .form__tercera-seccion {
+        gap: 50px;
+    }
+
+    /* Sección Crear Producto */
+
+    .main--createProduct {
+        margin-top: 15%;
+    }
+
+    .formCreateProduct {
+        padding: 5px;
+    }
+
+    .boton-enviar-producto {
+        margin: 5% 0 5% 35%;
+    }
+
+    /* Footer */
+    .footer__primer-fila{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /*Registro*/
+
     .logo-img{
         width: 150px;
     }
@@ -1201,4 +1154,47 @@ select {
     }
 }
 
-/*Termina Registro*/
+@media (min-width: 1280px) {
+
+    /* Login */
+
+    .form {
+        max-width: 50%;
+        margin: 1% 0 0 25%;
+        padding-bottom: 1%;
+    }
+
+    .form__input-login {
+        width: 65%;
+    }
+
+    .form__contenedor-subtitulos {
+        justify-content: space-evenly;
+        gap: 10%;
+    }
+
+    .form__boton-enviar {
+        width: 100%;
+    }
+
+    .form__tercera-seccion {
+        gap: 7%;
+    }
+
+    /* Sección Crear Producto */
+
+    .main--createProduct {
+        margin-top: 10%;
+    }
+
+    .formCreateProduct {
+        max-width: 50%;
+        padding: 10px;
+        margin: 0 0 0 25%;
+    }
+
+    .boton-enviar-producto {
+        margin: 5% 0 5% 39%;
+    }
+}
+
