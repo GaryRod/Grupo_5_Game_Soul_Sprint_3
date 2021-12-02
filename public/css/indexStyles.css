@@ -477,6 +477,7 @@ cursor: pointer
     border-radius: 50px;
     color: #000;
     margin: 0 auto;
+    padding: 5px;
 }
 
 .form__seccion-h5 {
@@ -490,7 +491,7 @@ cursor: pointer
 }
 
 .boton-enviar-producto {
-    margin: 5% 0 5% 25%;
+    margin: 5% 0 5% 23%;
     padding: 2%;
     border-radius: 50px;
     transition: all 0.5s;
@@ -740,6 +741,10 @@ select {
         margin-bottom: 3%;
     }
 
+    .formCreateProduct {
+        padding: 5px;
+    }
+
     .boton-enviar-producto {
         margin: 5% 0 5% 28%;
     }
@@ -817,6 +822,10 @@ select {
         margin-top: 15%;
     }
 
+    .formCreateProduct {
+        padding: 5px;
+    }
+
     .boton-enviar-producto {
         margin: 5% 0 5% 35%;
     }
@@ -863,11 +872,12 @@ select {
 
     .formCreateProduct {
         max-width: 50%;
+        padding: 10px;
         margin: 0 0 0 25%;
     }
 
     .boton-enviar-producto {
-        margin: 5% 0 5% 40%;
+        margin: 5% 0 5% 39%;
     }
 }
 
