@@ -202,7 +202,8 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    margin-bottom: 15px
+    margin-bottom: 15px;
+    width: 100%;
 }
 
 .section-ppal__picture{
@@ -219,11 +220,6 @@
     display: flex;
     flex-direction: column;
     background-color: #548ca8;
-}
-
-.section-ppal__titulo{
-    color: #eee;
-    text-decoration: none;
 }
 
 .section-ppal__datos{
@@ -269,7 +265,7 @@
     display: flex;
     gap: 10px;
     width: 100%;
-    overflow-x: hidden;
+    justify-content: space-between;
 }
 
 .section-sec__arts{
@@ -278,13 +274,9 @@
     flex-direction: column;
     align-items: center;
     padding: 8px;
-    /* justify-content: space-between; */
     transition: all .2s;
-    gap: 5px
-}
-
-.section-sec__arts:hover{
-    box-shadow: 2px 2px 2px #000;
+    gap: 5px;
+    width: 50%;
 }
 
 .section-sec__cont-picture-star{
@@ -326,19 +318,21 @@
     text-align: center;
 }
 
-.section-sec__titulo-enlace{
+.section-ppal__titulo-enlace, .section-sec__titulo-enlace{
     color: #eee;
     text-decoration: none;
 }
 
-.section-ppal__titulo:hover, .section-sec__titulo-enlace:hover{
+.section-ppal__titulo-enlace:hover, .section-sec__titulo-enlace:hover{
     text-shadow: -2px -1px 15px #eee;
 }
 
+.section-ppal__art, .section-sec__arts{
+    box-shadow: 7px 7px 4px #334257;
+}
+
 /* Inicio del Login */
-
 /* Contenedor principal */
-
 .main--login {
     background-color: #eee;
     padding: 10px;
@@ -348,7 +342,6 @@
 }
 
 /* Logo */
-
 .logo-img{
     width: 50%;
     padding-top: 10px;
@@ -414,7 +407,6 @@ input::placeholder {
     color: #476072;
 }
 
-
 .form__tercera-seccion {
     display: flex;
     flex-direction: column;
@@ -440,7 +432,7 @@ input::placeholder {
 }
 
 .form__span{
-cursor: pointer
+    cursor: pointer
 }
 
 .form__cuarta-seccion {
@@ -751,17 +743,9 @@ select {
 }
 
 @media (min-width: 769px) {
-    .body{
-        overflow-x: hidden;
-    }
 
     .header__primer-fila{
         padding: 5px 10px;
-    }
-
-    /* Index */
-    .section-sec__cont-arts{
-        overflow-x: visible;
     }
 
     .section-sec__cont-star{
@@ -1046,67 +1030,6 @@ select {
     margin-bottom: 10px;
 }
 
-/* Footer */
-.footer{
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    background-color: #334257;
-}
-
-.footer__primer-fila{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-    margin-bottom: 5px
-}
-
-.footer__ul{
-    font-size: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-}
-
-.footer__li{
-    list-style: none;
-}
-
-.footer__li-enlaces-generales{
-    text-decoration: none;
-    color: #eee;
-}
-
-.footer__ul--met-pago{
-    padding: 2px;
-    background-color: #eee;
-    border-radius: 5px;
-}
-
-.footer__li-met-pago{
-    width: 40px;
-}
-
-.footer__li-enlaces-generales,.footer__li-met-pago{
-    margin-left: 5px;
-}
-
-.footer__li-redes{
-    color: #000;
-    background-color: #eee;
-    border-top: solid 2px #eee;
-    border-left: solid 2px #eee;
-    border-bottom: solid 2px #808080;
-    border-right: solid 2px #808080;
-    border-radius: 45%;
-    padding: 10px;
-}
-
 @media (min-width: 480px){
 
     .email-registro{
@@ -1149,11 +1072,6 @@ select {
     .contenedor-fechaDeNacimiento{
         margin-bottom: 20px;
     }
-
-     /* Footer */
-    .footer__met-pago{
-        width: 50px;
-    }
 }
 @media (min-width: 769px){
     .logo-img{
@@ -1182,12 +1100,6 @@ select {
 
     .input-fechaNacimiento{
         text-align: center;
-    }
-
-    /* Footer */
-    .footer__primer-fila{
-        flex-direction: row;
-        justify-content: space-between;
     }
 }
 
