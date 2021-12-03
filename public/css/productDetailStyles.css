@@ -161,6 +161,7 @@
     background-color: #eee;
     color: #548ca8;
 }
+
 main{
     display: flex;
     flex-direction: column;
@@ -168,6 +169,7 @@ main{
     width: 100%;
     margin-top: 100px;
 }
+
 .juego{
     box-shadow: 2px 2px  4px rgba(0, 0, 0, 0.5) ;
     display: flex;
@@ -177,6 +179,7 @@ main{
     width: 90%;
     height: 100%;
 }
+
 .nombre__juego{
     padding: 5px;
     color:#eee;
@@ -187,28 +190,33 @@ main{
     margin-bottom: 30px;
     text-align: center;
 }
+
 .img__juego{
     width: 80%;
     height: auto;
     margin-bottom: 10px;
 }
+
 img{
     width: 100%;
     max-height: 320px;
     max-width: 250px;
 }
+
 .plataformas{
     color: #eee;
     text-align: center;
     font-size: 20px;
     margin-bottom: 10px;
 }
+
 .cont__consolas{
     display: flex;
     width: 80%;
     justify-content: space-around;
     margin-bottom: 10px;
 }
+
 .ps5{
     display: flex;
     justify-content: center;
@@ -221,6 +229,7 @@ img{
     background-color: #eee;
     box-shadow:2px 2px  2px 2px rgba(0, 0, 0, 0.4) ;
 }
+
 .xbox{
     display: flex;
     justify-content: center;
@@ -233,6 +242,7 @@ img{
     text-shadow:2px 4px  4px rgba(0, 0, 0, 0.8) ;
     box-shadow:2px 2px  2px 2px rgba(0, 0, 0, 0.4) ;
 }
+
 .pc{
     display: flex;
     justify-content: center;
@@ -250,6 +260,7 @@ img{
     color: #eee;
     font-size: 20px;
 }
+
 .ediciones{
     width: 90%;
     height: auto;
@@ -259,6 +270,7 @@ img{
     padding: 5px;
     justify-content: space-around;
 }
+
 .ediciones button{
     background-color: #eee;
     padding: 3px;
@@ -266,9 +278,11 @@ img{
     border: solid 2px #334257;
     margin: 3px;
 }
+
 .ediciones button:hover{
     opacity: .8;
 }
+
 .ediciones button:focus{
     background-color: #334257;
     color: #eee;
@@ -284,6 +298,7 @@ img{
     height: 400px;
     margin: 15px;
 }
+
 .precio{
     background-color: #334257;
     width: 150px;
@@ -294,19 +309,19 @@ img{
     margin-bottom: 20px;
     margin-top: 10px;
 }
+
 .cont__añadir{
     width: 100%;
     display: flex;
     justify-content: space-around;
-
 }
+
 .añadir__carrito-fav{
     background-color: #4c854c;
     border: solid 1px #417541;
     box-shadow: 2px 2px 2px 1px #00000033;
     display: flex;
-    align-items: center;
-    
+    align-items: center;    
     height: 25px;
     color: #eee;
     cursor: pointer;
@@ -316,7 +331,7 @@ img{
     background-color: #074e07;
 }
 
-.añadir__carrito-fav:hover{
+.añadir__carrito-fav:active{
     transform: translate(2px, 2px);
     box-shadow: 0px 0px;
 }
@@ -328,6 +343,7 @@ img{
     
     
 }
+
 .video{
     color: #334257;
     border: solid 1px black;
@@ -338,6 +354,7 @@ img{
     background-color: #eee;
     cursor: pointer;
 }
+
 .descripcion{
     color: #334257;
     border: solid 1px black;
@@ -349,6 +366,7 @@ img{
     background-color: #eee;
     cursor: pointer;
 }
+
 .ficha__tecnica{
     color: #334257;
     border: solid 1px black;
@@ -360,10 +378,12 @@ img{
     background-color: #eee;
     cursor: pointer;
 }
+
 .video__detalles button:focus{
     background-color: #334257;
     color: #eee;
 }
+
 .cont__detalles{
     padding: 20px;
     text-align: start;
@@ -371,6 +391,7 @@ img{
 }
 
 /* Footer */
+
 .footer{
     position: relative;
     bottom: 0;
@@ -451,32 +472,37 @@ img{
     main{
         margin-top:120px;
     }
+
     .juego{
         position: relative;
         flex-direction: row;
         flex-wrap: wrap;
         z-index: -10;
-
     }
+
     .img__juego{
         width: 50%;
         text-align: center;
         border-right: solid 3px #334257;
     }
+
     .plataformas{
         position: absolute;
         right: 100px;
         top: 60px;
     }
+
     .cont__consolas{
         position: relative;
         top: -70px;
         width: 50%;
     }
+
     .edicion{
         width: 20%;
         text-align: center;
     }
+
     .ediciones{
         width: 80%;
         display: flex;
@@ -484,6 +510,7 @@ img{
     }
 
     /* Footer */
+
     .footer__met-pago{
         width: 50px;
     }
@@ -494,11 +521,13 @@ img{
     .header__primer-fila{
         padding: 5px 10px;
     }
+
     main{
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
     }
+
     .juego{
         flex-wrap: wrap;
         flex-direction: column;
@@ -508,33 +537,44 @@ img{
         padding-left:20px;
         height: 710px;
     }
+
     .img__juego{
         border:none;
     }
+
     .plataformas{
         position: static;
     }
+
     .cont__consolas{
         position: static;
         margin: 50px 0;
     }
+
     .ediciones{
         margin: 50px 0;;
     
     }
+
     .detalles{
         display: flex;
         flex-direction: column;
         width: 60%;
         height: 710px;
     }
+
     .stock{
         height: 200px;
     }
+
     .img__juego{
         width: 90%;
     }
+
+
      /* Footer */
+
+    
     .footer__primer-fila{
         flex-direction: row;
         justify-content: space-between;
