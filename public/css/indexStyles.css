@@ -12,6 +12,11 @@
     background-color: #476072;
     font-family: 'Roboto', sans-serif;
     color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
 }
 
 .body::-webkit-scrollbar{
@@ -49,7 +54,7 @@
 }
 
 .header__logo{
-    width: 60px;
+    width: 50px;
 }
 
 .cont-search{
@@ -112,13 +117,13 @@
     color: #eee;
 }
 
-.cont-i__items-log{
+.cont-i__items-logo{
     border-bottom: solid 1px #334257;
 }
 
 .cont-i__iconos{
     cursor: pointer;
-    width: 40px;
+    width: 30px;
 }
 
 .cont-i__iconos--user{
@@ -126,7 +131,7 @@
 }
 
 .cont-i__iconos--burger-menu{
-    width: 35px;
+    width: 25px;
 }
 
 /* Header navegador */
@@ -153,7 +158,7 @@
 .header__enlaces{
     display: block;
     text-decoration: none;
-    padding: 10px;
+    padding: 6px;
     color: #eee;
     font-weight: bold;
     transition-duration: .5s;
@@ -166,12 +171,16 @@
 
 /* Main */
 .main{
-    margin-top: 70px
+    margin-top: 60px
 }
 
 /* Index */
 .main--index{
-    padding: 5px
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
 }
 
 .button-carrito{
@@ -199,15 +208,13 @@
 }
 
 .section-ppal__art{
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
     width: 100%;
 }
 
 .section-ppal__picture{
-    min-width: 270px;
+    min-width: 170px;
     width: 100%;
 }
 
@@ -253,10 +260,6 @@
 }
 
 /* Section Sec */
-.section__sec{
-    margin-bottom: 10px
-}
-
 .section-sec__titulo{
     margin: 10px 0;
 }
@@ -265,7 +268,8 @@
     display: flex;
     gap: 10px;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .section-sec__arts{
@@ -276,7 +280,8 @@
     padding: 8px;
     transition: all .2s;
     gap: 5px;
-    width: 50%;
+    min-width: 120px;
+    width: 180px;
 }
 
 .section-sec__cont-picture-star{
@@ -329,6 +334,138 @@
 
 .section-ppal__art, .section-sec__arts{
     box-shadow: 7px 7px 4px #334257;
+}
+
+.section-ppal__titulo, .section-sec__titulo{
+    text-shadow: 1px -4px 4px #334257;
+}
+
+/* Inicio carrito */
+/* Carrito */
+.carrito{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #548ca8;
+    margin-bottom: 15px;
+}
+
+.carrito__juegos, .carrito__cod-total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carrito__juegos{
+    padding: 10px;
+    border-bottom: solid 1px #476072;
+}
+
+.carrito__cod-total{
+    padding: 20px;
+}
+
+.carrito__img-juego{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.carrito__juego{
+    font-size: 15px;
+}
+
+.carrito__i-precio-cant,.carrito__total{
+    white-space: nowrap;
+}
+
+.carrito__i-precio-cant{
+    display: flex;
+    gap: 10px;
+}
+
+.carrito__i-trash{
+    color: #eee;
+    width: 20px;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.carrito__i-trash:active{
+    transform: scale(0, 0);
+}
+
+.carrito__cod{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+/* Métodos de pago y pagar*/
+/* Elegir método de pago */
+.pagar-metodos{
+    width: 100%;
+    background-color: #548ca8;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pagar-metodos__titulo{
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.metodo-pago__lista{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    border-top: solid 1px #548ca8;
+}
+
+.metodo-pago__label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-bottom: solid 1px #548ca8;
+    padding: 10px;
+    background-color: #334257;
+    transition: all .5s;
+    cursor: pointer
+}
+
+.metodo-pago__label:hover{
+    background-color: #476072;
+}
+
+/* Boton de pagar */
+.metodo-pago__pagar{
+    margin: 0 auto;
+}
+
+.metodo-pago__boton{
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    background-color: #4c854c;
+    border: solid 1px #417541;
+    color: #eee;
+    text-align: center;
+    box-shadow: 2px 2px 2px #003;
+    cursor: pointer;
+    transition: color .3s, background-color .5s;
+}
+
+.metodo-pago__boton:hover{
+    background-color: #074e07;
+}
+
+.metodo-pago__boton:active{
+    transform: translate(2px, 2px);
+    box-shadow: 0px 0px;
 }
 
 /* Inicio del Login */
@@ -598,6 +735,7 @@ select {
     font-size: 15px;
     margin-bottom: 10px;
 }
+
 .input-checkbox{
     margin: 10px;
     margin-bottom: 5px;
@@ -886,6 +1024,7 @@ img{
 
 /* Footer */
 .footer{
+    align-self: flex-end;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -893,6 +1032,7 @@ img{
     display: flex;
     flex-direction: column;
     background-color: #334257;
+    gap: 10px
 }
 
 .footer__primer-fila{
@@ -900,11 +1040,10 @@ img{
     flex-direction: column;
     align-items: center;
     gap: 5px;
-    margin-bottom: 5px
 }
 
 .footer__ul{
-    font-size: 80%;
+    font-size: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -945,8 +1084,17 @@ img{
     padding: 10px;
 }
 
+.footer__copy{
+    font-size: 12px;
+}
+
 /* Media queries */
 @media (min-width: 480px ) {
+    
+    .cont-i__iconos{
+        width: 35px;
+    }
+
     .cont-i__iconos--burger-menu{
         display: none;
     }
@@ -959,12 +1107,13 @@ img{
         position: static;
     }
 
-    .main{
-        margin-top: 120px;
-    }
-
     .cont-search{
         width: 50%;
+    }
+
+    /* Main */
+    .main{
+        margin-top: 100px;
     }
 
     /* Index */
@@ -1022,6 +1171,15 @@ img{
 
     .section-sec__cont-star{
         left: -7px;
+    }
+
+     /* Carrito */
+    .carrito__juegos{
+        padding: 20px;
+    }
+
+    .pagar-metodos__titulo{
+        font-size: 1.5em;
     }
 
     /* Login */
@@ -1150,11 +1308,12 @@ img{
 }
 
 @media (min-width: 769px) {
-
+    /* Header */
     .header__primer-fila{
         padding: 5px 10px;
     }
 
+    /* Index */
     .section-sec__cont-star{
         top: 0;
         left: 0;
@@ -1179,6 +1338,26 @@ img{
     .section-sec__star:hover::after{
         content: "Añadir a favoritos";
         color: #eee;
+    }
+
+    /* Carrito */
+    .carrito{
+        width: 80%;
+    }
+
+    .pagar-metodos{
+        flex-direction: row;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .metodo-pago__lista{
+            flex-direction: row;
+        border-left: solid 1px #548ca8;
+    }
+
+    .metodo-pago__label{
+        border-right: solid 1px #548ca8;
     }
 
     /* Login */
