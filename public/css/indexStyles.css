@@ -16,7 +16,6 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    /* flex-direction: column; */
 }
 
 .body::-webkit-scrollbar{
@@ -818,13 +817,13 @@ select {
     text-align: center;
 }
 
-.img__juego{
+.cont-img__juego{
     width: 80%;
     height: auto;
     margin-bottom: 10px;
 }
 
-img{
+.cont-img__img{
     width: 100%;
     max-height: 320px;
     max-width: 250px;
@@ -967,8 +966,6 @@ img{
     display: flex;
     background-color: #548ca8;
     width: 100%;
-    
-    
 }
 
 .video{
@@ -1016,11 +1013,7 @@ img{
     text-align: start;
     overflow: hidden;
 }
-
-
 /*-----------Fin-ProductDetail---------------*/
-
-
 
 /* Footer */
 .footer{
@@ -1256,8 +1249,6 @@ img{
 
 
     /*-----------ProductDetail---------------*/
-
-
     .main-detail{
         margin-top:120px;
     }
@@ -1269,7 +1260,7 @@ img{
         z-index: -10;
     }
 
-    .img__juego{
+    .cont-img__juego{
         width: 50%;
         text-align: center;
         border-right: solid 3px #334257;
@@ -1418,6 +1409,54 @@ img{
         text-align: center;
     }
 
+    /*-----------ProductDetail---------------*/
+    .main-detail{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .juego{
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 40%;
+        margin-left: 15px;
+        align-items: flex-start;
+        padding-left:20px;
+        height: 710px;
+    }
+
+    .cont-img__juego{
+        border:none;
+        width: 90%;
+    }
+
+    .plataformas{
+        position: static;
+        }
+
+    .cont__consolas{
+        position: static;
+        margin: 50px 0;
+    }
+
+    .ediciones{
+        margin: 50px 0;;
+    
+    }
+
+    .detalles{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        height: 710px;
+    }
+
+    .stock{
+        height: 200px;
+    }
+    /*-----------fin-ProductDetail---------------*/
+
     /* Footer */
     .footer__primer-fila{
         flex-direction: row;
@@ -1464,60 +1503,4 @@ img{
     .boton-enviar-producto {
         margin: 5% 0 5% 40%;
     }
-
-
-    /*-----------ProductDetail---------------*/
-
-
-    .main-detail{
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-    }
-
-    .juego{
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 40%;
-        margin-left: 15px;
-        align-items: flex-start;
-        padding-left:20px;
-        height: 710px;
-    }
-
-    .img__juego{
-        border:none;
-    }
-
-    .plataformas{
-        position: static;
-    }
-
-    .cont__consolas{
-        position: static;
-        margin: 50px 0;
-    }
-
-    .ediciones{
-        margin: 50px 0;;
-    
-    }
-
-    .detalles{
-        display: flex;
-        flex-direction: column;
-        width: 60%;
-        height: 710px;
-    }
-
-    .stock{
-        height: 200px;
-    }
-
-    .img__juego{
-        width: 90%;
-    }
-
-
-    /*-----------fin-ProductDetail---------------*/
 }
