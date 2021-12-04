@@ -13,8 +13,10 @@
     font-family: 'Roboto', sans-serif;
     color: #eee;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
 }
 
 .body::-webkit-scrollbar{
@@ -212,7 +214,7 @@
 }
 
 .section-ppal__picture{
-    min-width: 270px;
+    min-width: 170px;
     width: 100%;
 }
 
@@ -266,7 +268,8 @@
     display: flex;
     gap: 10px;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .section-sec__arts{
@@ -277,7 +280,8 @@
     padding: 8px;
     transition: all .2s;
     gap: 5px;
-    width: 50%;
+    min-width: 120px;
+    width: 180px;
 }
 
 .section-sec__cont-picture-star{
@@ -333,9 +337,10 @@
 }
 
 .section-ppal__titulo, .section-sec__titulo{
-    text-shadow: 1px -8px 4px #334257;
+    text-shadow: 1px -4px 4px #334257;
 }
 
+/* Inicio carrito */
 /* Carrito */
 .carrito{
     display: flex;
@@ -730,6 +735,7 @@ select {
     font-size: 15px;
     margin-bottom: 10px;
 }
+
 .input-checkbox{
     margin: 10px;
     margin-bottom: 5px;
@@ -783,6 +789,7 @@ select {
 
 /* Footer */
 .footer{
+    align-self: flex-end;
     position: relative;
     bottom: 0;
     width: 100%;
