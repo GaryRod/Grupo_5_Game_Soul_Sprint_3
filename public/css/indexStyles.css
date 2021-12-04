@@ -649,6 +649,241 @@ select {
     margin-bottom: 10px;
 }
 
+
+/*-----------ProductDetail---------------*/
+.main-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.juego{
+    box-shadow: 2px 2px  4px rgba(0, 0, 0, 0.5) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #548ca8;
+    width: 90%;
+    height: 100%;
+}
+
+.nombre__juego{
+    padding: 5px;
+    color:#eee;
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.img__juego{
+    width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+img{
+    width: 100%;
+    max-height: 320px;
+    max-width: 250px;
+}
+
+.plataformas{
+    color: #eee;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.cont__consolas{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.ps5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    color: #eee;
+    text-shadow:2px 4px  4px rgba(0, 0, 0, 0.8) ;
+    border-radius: 50%;
+    background-color: #eee;
+    box-shadow:2px 2px  2px 2px rgba(0, 0, 0, 0.4) ;
+}
+
+.xbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    color: #eee;
+    border-radius: 50%;
+    background-color: rgb(21, 80, 21);
+    text-shadow:2px 4px  4px rgba(0, 0, 0, 0.8) ;
+    box-shadow:2px 2px  2px 2px rgba(0, 0, 0, 0.4) ;
+}
+
+.pc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    color: #eee;
+    transform:perspective(150px) rotateY(-40deg);
+    background-color: #eee;
+    text-shadow:2px 4px 4px rgba(0, 0, 0, 0.8) ;
+    box-shadow:2px 2px  2px 2px rgba(0, 0, 0, 0.4) ;
+}
+
+.edicion{
+    color: #eee;
+    font-size: 20px;
+}
+
+.ediciones{
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: space-around;
+}
+
+.ediciones button{
+    background-color: #eee;
+    padding: 3px;
+    border-radius: 5px;
+    border: solid 2px #334257;
+    margin: 3px;
+}
+
+.ediciones button:hover{
+    opacity: .8;
+}
+
+.ediciones button:focus{
+    background-color: #334257;
+    color: #eee;
+}
+
+.detalles{
+    box-shadow: 2px 2px  4px rgba(0, 0, 0, 0.35) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:  #548ca8;
+    width: 90%;
+    height: 400px;
+    margin: 15px;
+}
+
+.precio{
+    background-color: #334257;
+    width: 150px;
+    padding: 5px;
+    font-size: 24px;
+    border-radius: 5%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.cont__añadir{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.añadir__carrito-fav{
+    background-color: #4c854c;
+    border: solid 1px #417541;
+    box-shadow: 2px 2px 2px 1px #00000033;
+    display: flex;
+    align-items: center;    
+    height: 25px;
+    color: #eee;
+    cursor: pointer;
+}
+
+.añadir__carrito-fav:hover{
+    background-color: #074e07;
+}
+
+.añadir__carrito-fav:active{
+    transform: translate(2px, 2px);
+    box-shadow: 0px 0px;
+}
+
+.video__detalles{
+    display: flex;
+    background-color: #548ca8;
+    width: 100%;
+    
+    
+}
+
+.video{
+    color: #334257;
+    border: solid 1px black;
+    height: 30px;
+    width: 33%;
+    text-align: center;
+    padding: 5px;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.descripcion{
+    color: #334257;
+    border: solid 1px black;
+    height: 30px;
+    width: 33%;
+    border-left: none;
+    text-align: center;
+    padding: 5px;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.ficha__tecnica{
+    color: #334257;
+    border: solid 1px black;
+    height: 30px;
+    width: 34%;
+    border-left: none;
+    text-align: center;
+    padding: 5px;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.video__detalles button:focus{
+    background-color: #334257;
+    color: #eee;
+}
+
+.cont__detalles{
+    padding: 20px;
+    text-align: start;
+    overflow: hidden;
+}
+
+
+/*-----------Fin-ProductDetail---------------*/
+
+
+
 /* Footer */
 .footer{
     position: relative;
@@ -861,6 +1096,53 @@ select {
         margin-bottom: 20px;
     }
 
+
+    /*-----------ProductDetail---------------*/
+
+
+    .main-detail{
+        margin-top:120px;
+    }
+
+    .juego{
+        position: relative;
+        flex-direction: row;
+        flex-wrap: wrap;
+        z-index: -10;
+    }
+
+    .img__juego{
+        width: 50%;
+        text-align: center;
+        border-right: solid 3px #334257;
+    }
+
+    .plataformas{
+        position: absolute;
+        right: 100px;
+        top: 60px;
+    }
+
+    .cont__consolas{
+        position: relative;
+        top: -70px;
+        width: 50%;
+    }
+
+    .edicion{
+        width: 20%;
+        text-align: center;
+    }
+
+    .ediciones{
+        width: 80%;
+        display: flex;
+        align-items: center;
+    }
+
+    /*-----------fin-ProductDetail---------------*/
+
+
     /* Footer */
     .footer__met-pago{
         width: 50px;
@@ -1003,4 +1285,60 @@ select {
     .boton-enviar-producto {
         margin: 5% 0 5% 40%;
     }
+
+
+    /*-----------ProductDetail---------------*/
+
+
+    .main-detail{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .juego{
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 40%;
+        margin-left: 15px;
+        align-items: flex-start;
+        padding-left:20px;
+        height: 710px;
+    }
+
+    .img__juego{
+        border:none;
+    }
+
+    .plataformas{
+        position: static;
+    }
+
+    .cont__consolas{
+        position: static;
+        margin: 50px 0;
+    }
+
+    .ediciones{
+        margin: 50px 0;;
+    
+    }
+
+    .detalles{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        height: 710px;
+    }
+
+    .stock{
+        height: 200px;
+    }
+
+    .img__juego{
+        width: 90%;
+    }
+
+
+    /*-----------fin-ProductDetail---------------*/
 }
