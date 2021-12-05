@@ -31,7 +31,7 @@
     background: #548ca8;
 }
 
-/* Header */
+/*-----------Header---------------*/
 .header{
     width: 100%;
     display: flex;
@@ -168,12 +168,12 @@
     color: #548ca8;
 }
 
-/* Main */
+/*-----------Main---------------*/
 .main{
     margin-top: 60px
 }
 
-/* Index */
+/*-----------Index---------------*/
 .main--index{
     padding: 5px;
     display: flex;
@@ -206,6 +206,7 @@
     box-shadow: 0px 0px;
 }
 
+/* Section ppal */
 .section-ppal__art{
     display: flex;
     flex-direction: column;
@@ -265,7 +266,7 @@
 
 .section-sec__cont-arts{
     display: flex;
-    gap: 10px;
+    gap: 15px;
     width: 100%;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -281,6 +282,7 @@
     gap: 5px;
     min-width: 120px;
     width: 180px;
+    border-radius: 5px;
 }
 
 .section-sec__cont-picture-star{
@@ -294,8 +296,8 @@
 
 .section-sec__cont-star{
     position: absolute;
-    top: 100%;
-    left: -27px;
+    top: 105%;
+    left: -29px;
     color: yellow;
 }
 
@@ -322,6 +324,11 @@
     text-align: center;
 }
 
+/* Section ppal y section sec */
+.section-ppal__titulo, .section-sec__titulo{
+    text-shadow: 1px -4px 4px #334257;
+}
+
 .section-ppal__titulo-enlace, .section-sec__titulo-enlace{
     color: #eee;
     text-decoration: none;
@@ -335,11 +342,7 @@
     box-shadow: 7px 7px 4px #334257;
 }
 
-.section-ppal__titulo, .section-sec__titulo{
-    text-shadow: 1px -4px 4px #334257;
-}
-
-/* Inicio carrito */
+/*-----------Inicio de carrito---------------*/
 /* Carrito */
 .carrito{
     display: flex;
@@ -467,7 +470,7 @@
     box-shadow: 0px 0px;
 }
 
-/* Inicio del Login */
+/*-----------Inicio login---------------*/
 /* Contenedor principal */
 .main--login {
     background-color: #eee;
@@ -592,7 +595,7 @@ input::placeholder {
     color: white;
 }
 
-/* Sección Crear Producto */
+/*-----------Crear producto---------------*/
 .main--createProduct{
     margin-bottom: 20px;
 }
@@ -632,7 +635,7 @@ select {
     width: 50%;
 }
 
-/*Comienza Registro*/
+/*-----------Inicio de registro---------------*/
 .body--registro{
     color: #000
 }
@@ -1013,9 +1016,8 @@ select {
     text-align: start;
     overflow: hidden;
 }
-/*-----------Fin-ProductDetail---------------*/
 
-/* Footer */
+/*-----------Footer---------------*/
 .footer{
     align-self: flex-end;
     position: relative;
@@ -1056,10 +1058,12 @@ select {
     padding: 2px;
     background-color: #eee;
     border-radius: 5px;
+    /* min-width: 100%; */
 }
 
 .footer__li-met-pago{
     width: 40px;
+    min-width: 30px;
 }
 
 .footer__li-enlaces-generales,.footer__li-met-pago{
@@ -1081,9 +1085,9 @@ select {
     font-size: 12px;
 }
 
-/* Media queries */
+/*-----------Media queries---------------*/
 @media (min-width: 480px ) {
-    
+/*-----------Header---------------*/
     .cont-i__iconos{
         width: 35px;
     }
@@ -1104,16 +1108,17 @@ select {
         width: 50%;
     }
 
-    /* Main */
+    /*-----------Main---------------*/
     .main{
         margin-top: 100px;
     }
 
-    /* Index */
+    /*-----------Index---------------*/
     .main--index{
         padding: 0 3%
     }
-    
+
+    /* Section ppal */
     .section-ppal__art{
         flex-direction: row;
         margin: 0 auto
@@ -1157,6 +1162,7 @@ select {
         max-width: 300px;
     }
 
+    /* Section sec */
     .section-sec__cont-picture-star{
         width: 150px;
         height: 150px;
@@ -1166,7 +1172,7 @@ select {
         left: -7px;
     }
 
-     /* Carrito */
+    /*-----------Inicio de carrito---------------*/
     .carrito__juegos{
         padding: 20px;
     }
@@ -1175,7 +1181,7 @@ select {
         font-size: 1.5em;
     }
 
-    /* Login */
+    /*-----------Inicio login---------------*/
     .logo-img {
         width: 60%;
     }
@@ -1195,7 +1201,7 @@ select {
         width: 50%;
     }
 
-    /* Sección Crear Producto */
+    /*-----------Crear producto---------------*/
     .main--createProduct {
         margin-top: 25%;
         margin-bottom: 3%;
@@ -1205,7 +1211,7 @@ select {
         margin: 5% 0 5% 28%;
     }
 
-    /*Registro*/
+    /*-----------Inicio registro---------------*/
     .email-registro{
         padding-right:11%;
     }
@@ -1246,7 +1252,6 @@ select {
     .contenedor-fechaDeNacimiento{
         margin-bottom: 20px;
     }
-
 
     /*-----------ProductDetail---------------*/
     .main-detail{
@@ -1289,22 +1294,21 @@ select {
         align-items: center;
     }
 
-    /*-----------fin-ProductDetail---------------*/
-
-
-    /* Footer */
+    /*-----------Footer---------------*/
     .footer__met-pago{
         width: 50px;
     }
 }
 
 @media (min-width: 769px) {
-    /* Header */
+    /*-----------Header---------------*/
+
     .header__primer-fila{
         padding: 5px 10px;
     }
 
-    /* Index */
+    /*-----------Index---------------*/
+
     .section-sec__cont-star{
         top: 0;
         left: 0;
@@ -1331,7 +1335,7 @@ select {
         color: #eee;
     }
 
-    /* Carrito */
+    /*-----------Inicio de carrito---------------*/
     .carrito{
         width: 80%;
     }
@@ -1351,7 +1355,7 @@ select {
         border-right: solid 1px #548ca8;
     }
 
-    /* Login */
+    /*-----------Inicio login---------------*/
     .logo-img{
         width: 150px;
     }
@@ -1371,7 +1375,7 @@ select {
         gap: 50px;
     }
 
-    /* Sección Crear Producto */
+    /*-----------Crear producto---------------*/
     .main--createProduct {
         margin-top: 15%;
     }
@@ -1380,7 +1384,7 @@ select {
         margin: 5% 0 5% 35%;
     }
 
-    /*Registro*/
+    /*-----------Inicio registro---------------*/
     .logo-img{
         width: 150px;
     }
@@ -1455,9 +1459,8 @@ select {
     .stock{
         height: 200px;
     }
-    /*-----------fin-ProductDetail---------------*/
 
-    /* Footer */
+    /*-----------Footer---------------*/
     .footer__primer-fila{
         flex-direction: row;
         justify-content: space-between;
@@ -1466,7 +1469,7 @@ select {
 
 @media (min-width: 1280px) {
 
-    /* Login */
+    /*-----------Inicio login---------------*/
     .form {
         max-width: 50%;
         margin: 1% 0 0 25%;
@@ -1490,7 +1493,7 @@ select {
         gap: 7%;
     }
 
-    /* Sección Crear Producto */
+    /*-----------Crear producto---------------*/
     .main--createProduct {
         margin-top: 10%;
     }
