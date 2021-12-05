@@ -885,6 +885,10 @@ select {
     box-shadow:2px 2px  2px 2px rgba(0, 0, 0, 0.4) ;
 }
 
+.img-logo__plataformas{
+    width: 100%;
+}
+
 .edicion{
     color: #eee;
     font-size: 20px;
@@ -1279,7 +1283,7 @@ select {
 
     .cont__consolas{
         position: relative;
-        top: -70px;
+        top: -50px;
         width: 50%;
     }
 
