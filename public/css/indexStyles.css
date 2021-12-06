@@ -170,7 +170,8 @@
 
 /*-----------Main---------------*/
 .main{
-    margin-top: 60px
+    margin-top: 60px;
+    margin-bottom: 15px;
 }
 
 /*-----------Index---------------*/
@@ -216,6 +217,8 @@
 .section-ppal__picture{
     min-width: 170px;
     width: 100%;
+    /* height: 100%; */
+
 }
 
 .section-ppal__img{
@@ -596,8 +599,8 @@ input::placeholder {
 }
 
 /*-----------Crear producto---------------*/
-.main--createProduct{
-    margin-bottom: 20px;
+.body--createProduct{
+    display: block;
 }
 
 .formCreateProduct {
@@ -624,6 +627,7 @@ input::placeholder {
     padding: 2%;
     border-radius: 50px;
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 .boton-enviar-producto:hover {
@@ -789,24 +793,22 @@ select {
     margin-bottom: 10px;
 }
 
-
 /*-----------ProductDetail---------------*/
 .main-detail{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 100px;
 }
 
 .juego{
-    box-shadow: 2px 2px  4px rgba(0, 0, 0, 0.5) ;
+    width: 90%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5) ;
+    background-color: #548ca8;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #548ca8;
-    width: 90%;
-    height: 100%;
+    border-radius: 5px;
 }
 
 .nombre__juego{
@@ -816,13 +818,12 @@ select {
     text-align: center;
     height: 30px;
     font-size: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
 .cont-img__juego{
     width: 80%;
-    height: auto;
     margin-bottom: 10px;
 }
 
@@ -830,6 +831,12 @@ select {
     width: 100%;
     max-height: 320px;
     max-width: 250px;
+}
+
+.cont-ediciones-plataformas, .cont-plataformas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .plataformas{
@@ -841,8 +848,7 @@ select {
 
 .cont__consolas{
     display: flex;
-    width: 80%;
-    justify-content: space-around;
+    gap: 15px;
     margin-bottom: 10px;
 }
 
@@ -889,19 +895,23 @@ select {
     width: 100%;
 }
 
-.edicion{
+.cont-ediciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont-ediciones__titulo{
     color: #eee;
     font-size: 20px;
 }
 
-.ediciones{
+.cont-ediciones__tipos{
     width: 90%;
-    height: auto;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     padding: 5px;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .ediciones button{
@@ -928,8 +938,14 @@ select {
     align-items: center;
     background-color:  #548ca8;
     width: 90%;
-    height: 400px;
     margin: 15px;
+    border-radius: 5px;
+}
+
+.detalles__primer-fila{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .precio{
@@ -946,7 +962,7 @@ select {
 .cont__añadir{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    gap: 30px
 }
 
 .añadir__carrito-fav{
@@ -969,48 +985,30 @@ select {
     box-shadow: 0px 0px;
 }
 
-.video__detalles{
+.cont-datos{
     display: flex;
-    background-color: #548ca8;
     width: 100%;
+    color: #334257;
+    text-align: center;
+    background-color: #eee;
 }
 
-.video{
-    color: #334257;
-    border: solid 1px black;
-    height: 30px;
+.video, .descripcion, .ficha-tecnica{
     width: 33%;
-    text-align: center;
     padding: 5px;
-    background-color: #eee;
+    border: solid 1px black;
     cursor: pointer;
 }
 
-.descripcion{
-    color: #334257;
-    border: solid 1px black;
-    height: 30px;
-    width: 33%;
+.descripcion, .ficha-tecnica{
     border-left: none;
-    text-align: center;
-    padding: 5px;
-    background-color: #eee;
-    cursor: pointer;
 }
 
-.ficha__tecnica{
-    color: #334257;
-    border: solid 1px black;
-    height: 30px;
+.ficha-tecnica{
     width: 34%;
-    border-left: none;
-    text-align: center;
-    padding: 5px;
-    background-color: #eee;
-    cursor: pointer;
 }
 
-.video__detalles button:focus{
+.cont-datos button:focus{
     background-color: #334257;
     color: #eee;
 }
@@ -1018,7 +1016,12 @@ select {
 .cont__detalles{
     padding: 20px;
     text-align: start;
-    overflow: hidden;
+    height: 87%;
+    /* overflow: scroll; */
+}
+
+.stock{
+    margin: 10px;
 }
 
 /*-----------Footer---------------*/
@@ -1206,11 +1209,6 @@ select {
     }
 
     /*-----------Crear producto---------------*/
-    .main--createProduct {
-        margin-top: 25%;
-        margin-bottom: 3%;
-    }
-
     .boton-enviar-producto {
         margin: 5% 0 5% 28%;
     }
@@ -1258,44 +1256,17 @@ select {
     }
 
     /*-----------ProductDetail---------------*/
-    .main-detail{
-        margin-top:120px;
-    }
-
     .juego{
         position: relative;
         flex-direction: row;
         flex-wrap: wrap;
-        z-index: -10;
+        justify-content: space-evenly;
     }
 
     .cont-img__juego{
         width: 50%;
         text-align: center;
         border-right: solid 3px #334257;
-    }
-
-    .plataformas{
-        position: absolute;
-        right: 100px;
-        top: 60px;
-    }
-
-    .cont__consolas{
-        position: relative;
-        top: -50px;
-        width: 50%;
-    }
-
-    .edicion{
-        width: 20%;
-        text-align: center;
-    }
-
-    .ediciones{
-        width: 80%;
-        display: flex;
-        align-items: center;
     }
 
     /*-----------Footer---------------*/
@@ -1380,10 +1351,6 @@ select {
     }
 
     /*-----------Crear producto---------------*/
-    .main--createProduct {
-        margin-top: 15%;
-    }
-
     .boton-enviar-producto {
         margin: 5% 0 5% 35%;
     }
@@ -1422,34 +1389,36 @@ select {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
+        /* align-items: ; */
+        height: 460px;
     }
 
     .juego{
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         flex-direction: column;
         width: 40%;
         margin-left: 15px;
-        align-items: flex-start;
+        /* align-items: flex-start; */
         padding-left:20px;
-        height: 710px;
+        height: 100%;
     }
 
     .cont-img__juego{
-        border:none;
+        border: none;
         width: 90%;
     }
 
-    .plataformas{
+    /* .plataformas{
         position: static;
-        }
+        } */
 
     .cont__consolas{
-        position: static;
-        margin: 50px 0;
+        /* position: static; */
+        /* margin: 50px 0; */
     }
 
-    .ediciones{
-        margin: 50px 0;;
+    .cont-ediciones__tipos{
+        /* margin: 50px 0;; */
     
     }
 
@@ -1457,12 +1426,20 @@ select {
         display: flex;
         flex-direction: column;
         width: 60%;
-        height: 710px;
+        height: 100%;
     }
 
-    .stock{
-        height: 200px;
+    .detalles__primer-fila{
+        height: 50%;
     }
+
+    .contenido{
+        height: 50%;
+    }
+
+    /* .stock{
+        height: 200px;
+    } */
 
     /*-----------Footer---------------*/
     .footer__primer-fila{

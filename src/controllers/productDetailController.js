@@ -2,7 +2,7 @@ const path = require('path')
 
 const productDetailController ={
     productDetail: (req, res) => {
-        res.sendFile(path.join(__dirname ,'../productDetail.html'))
+        res.sendFile(path.join(__dirname ,'../views/productDetail.html'))
     }
 }
 
