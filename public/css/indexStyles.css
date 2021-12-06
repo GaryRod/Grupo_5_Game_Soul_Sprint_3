@@ -473,135 +473,6 @@
     box-shadow: 0px 0px;
 }
 
-/*-----------Inicio login---------------*/
-/* Contenedor principal */
-.main--login {
-    background-color: #eee;
-    padding: 10px;
-    max-width: 450px;
-    margin: 2% auto;
-    border-radius: 25px;
-}
-
-/* Logo */
-.logo-img{
-    width: 50%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.logo{
-    text-align: center;
-}
-
-/* Formulario */
-.form {
-    max-width: 90%;
-    margin: 0 auto;
-}
-
-.form__logo {
-    text-align: center;
-}
-
-.form__img {
-    width: 200px;
-}
-
-.form__subtitulo-login, .form__subtitulo-a, .form__span, .form__a {
-    color: #333;
-
-}
-.form__primera-seccion {
-    color: #333;
-    text-align: center;
-}
-.form__segunda-seccion {
-    display: flex;
-    flex-direction: column;
-    color: #333;
-}
-
-.form__contenedor-subtitulos {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 10px;
-}
-
-.form__contenedor-inputs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.form__login {
-    padding-left: 3px;
-    font-size: 20px; 
-}
-
-.form__input-login {
-    padding: 5px;
-    margin: 5px;
-    border-radius: 10px;
-    border: 1px solid black;
-    color: rgba(0, 4, 55, 0.8);
-}
-
-input::placeholder {
-    color: #476072;
-}
-
-.form__tercera-seccion {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    align-items: center;
-    gap: 4%;
-}
-
-.form__contenedor-checkbox {
-    text-align: center;
-}
-
-.form__subtitulo-a, .form__a {
-    text-decoration: none;
-}
-
-.form__a {
-    font-size: 100%;
-}
-
-.form__boton-checkbox {
-    margin: 5px;
-}
-
-.form__span{
-    cursor: pointer
-}
-
-.form__cuarta-seccion {
-    display: flex;
-    padding: 15px;
-}
-
-.form__boton-enviar {
-    color: #000;
-    margin: auto;
-    padding: 10px;
-    width: 60%;
-    border-radius: 10px;
-    border: solid 1px #000;
-    background-color: #eee;
-    transition: all .5s;
-    cursor: pointer
-}
-
-.form__boton-enviar:hover {
-    background-color: #476072;
-    color: white;
-}
-
 /*-----------Crear producto---------------*/
 .body--createProduct{
     display: block;
@@ -643,27 +514,18 @@ select {
     width: 50%;
 }
 
-/*-----------Inicio de registro---------------*/
-.body--registro{
-    color: #000
-}
-
-.header-registro{
-    background-color: #334257;
-}
-
-.main-registro{
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.section-registro{
+/*-----------login y registro---------------*/
+/* Contenedor principal */
+.main--registro-login{
+    max-width: 450px;
+    margin: 2% auto;
+    color: #333;
     background-color: #eee;
-    margin: 2%;
     border-radius: 25px;
+    padding: 10px;
 }
 
+/* Logo */
 .logo-img{
     width: 30%;
     padding-top: 10px;
@@ -672,12 +534,6 @@ select {
 
 .logo{
     text-align: center;
-}
-
-.titulo-registro{
-    font-size: 15px;
-    text-align: center;
-    padding: 15px;
 }
 
 .lista-iconos-registro{
@@ -701,54 +557,133 @@ select {
     background-color: #eee;
 }
 
-.form-registro{
-    font-size: 12px;
-    padding: 0 10% 0 10%;
-    text-align: left;
+/*-----------Inicio login---------------*/
+/* Formulario */
+.form__subtitulo-login, .form__subtitulo-a, .form__span, .form__a {
+    color: #333;
 }
 
-.nombre-registro{
-    padding-right: 9%;
+.form__primera-seccion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
 }
 
-.email-registro{
-    padding-right:11.5%;
+.form__segunda-seccion {
+    display: flex;
+    flex-direction: column;
 }
 
-.contraseña-registro{
-    padding-right: 2%;
+.form__contenedor-subtitulos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
 }
 
-.input-nombre, .input-email, .input-contraseña{
-    width: 56%;
-    height: 15px; 
+.form__contenedor-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__login {
+    padding-left: 3px;
+    font-size: 20px; 
+}
+
+.form__input-login {
+    padding: 5px;
+    margin: 5px 5px 15px 5px;
     border-radius: 10px;
-    border: #646161 1px solid;
-    padding: 10px 0 0 0;
+    border: 1px solid #000;
+    color: rgba(0, 4, 55, 0.8);
+}
+
+.form__tercera-seccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4%;
+}
+
+.form__subtitulo-a, .form__a {
+    text-decoration: none;
+}
+
+.form__a {
+    font-size: 100%;
+}
+
+.form__contenedor-checkbox{
+    display: flex;
+    align-items: center;
+}
+
+.form__boton-checkbox {
+    margin: 5px;
+}
+
+.form__span{
+    cursor: pointer
+}
+
+.form__cuarta-seccion {
+    display: flex;
+    padding: 15px;
+}
+
+.form__boton-enviar {
+    color: #000;
+    margin: auto;
+    padding: 10px;
+    width: 60%;
+    border-radius: 10px;
+    border: solid 1px #000;
+    background-color: #eee;
+    transition: all .5s;
+    cursor: pointer
+}
+
+.form__boton-enviar:hover {
+    background-color: #476072;
+    color: white;
+}
+
+/*-----------Inicio de registro---------------*/
+.titulo-registro{
+    font-size: 15px;
+    text-align: center;
+    padding: 15px;
+}
+
+.form-registro{
+    padding: 0 10% 0 10%;
+    text-align: center;
+}
+
+.input-nombre, .input-fechaNacimiento, .input-email, .input-contraseña{
+    padding: 5px;
+    margin: 5px auto 0;
+    border-radius: 10px;
+    border: 1px solid #000;
+    color: rgba(0, 4, 55, 0.8);
+    display: block;
 }
 
 .fechaDeNacimiento-registro{
     padding-right: 19px;
 }
 
-.input-fechaNacimiento{
-    width: 46%;
-    height: 16px;
-    border-radius: 10px;
-    border: #646161 1px solid;
-    color: #646161;
-    text-align: center;
-}
-
 .contenedor-tyc{
-    text-align: center;
-    font-size: 15px;
-    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.input-checkbox{
-    margin: 10px;
-    margin-bottom: 5px;
+.input-checkbox{ 
+    margin: 5px;
 }
 
 .contenedor-botonCrear{
@@ -775,18 +710,17 @@ select {
 .contenedor-iniciarSesion{
     display: flex;
     justify-content: space-evenly;
-    padding-bottom: 15px;
-    font-size: 15px;
+    margin: 10px;
     align-items: center;
 }
+
 .button-iniciarSesion{
-    color: #000;
+    color: #333;
     text-decoration: inherit;
 }
 
 .tenesCuenta-registro{
     margin-right: 9%;
-    font-size: 15px;
 }
 
 .contenedor-nombreRegistro, .contenedor-emailRegistro, .contenedor-contraseña{
@@ -1192,21 +1126,14 @@ select {
         font-size: 1.5em;
     }
 
+    /*-----------Crear producto---------------*/
+    .boton-enviar-producto {
+        margin: 5% 0 5% 28%;
+    }
+
+    /*-----------Login y registro---------------*/
+
     /*-----------Inicio login---------------*/
-    .logo-img {
-        width: 60%;
-    }
-
-    .form {
-        max-width: 65%;
-        border-radius: 50px;
-    }
-
-    .form__primera-seccion {
-        text-align: center;
-        color: #333;
-    }
-
     .form__tercera-seccion {
         flex-direction: row;
         gap: 50px;
@@ -1217,54 +1144,7 @@ select {
         width: 50%;
     }
 
-    /*-----------Crear producto---------------*/
-    .boton-enviar-producto {
-        margin: 5% 0 5% 28%;
-    }
-
     /*-----------Inicio registro---------------*/
-    .email-registro{
-        padding-right:11%;
-    }
-
-    .contraseña-registro{
-        padding-right: 3.3%;
-    }
-
-    .iconos-facebook, .iconos-twitter, .iconos-instagram{
-        font-size: 25px;
-        padding: 7px 10px;
-    }
-
-    .contenedor-tyc{
-        font-size: 20px;
-    }
-
-    .button-crearCuenta {
-        width: 40%;
-    }
-    .button-iniciarSesion{
-        font-size: 16px;
-    }
-    .tenesCuenta-registro{
-        font-size: 15px;
-    }
-
-    .input-nombre, .input-email, .input-contraseña{
-        height: 22px;
-        padding: 10px;
-        font-size: 15px;
-    }
-
-    .input-fechaNacimiento{
-        height: 25px;
-        font-size: 15px;
-        text-align: center;
-    }
-
-    .contenedor-fechaDeNacimiento{
-        margin-bottom: 20px;
-    }
 
     /*-----------ProductDetail---------------*/
     .juego{
@@ -1288,7 +1168,6 @@ select {
 
 @media (min-width: 769px) {
     /*-----------Header---------------*/
-
     .header__primer-fila{
         padding: 5px 10px;
     }
@@ -1341,20 +1220,26 @@ select {
         border-right: solid 1px #548ca8;
     }
 
-    /*-----------Inicio login---------------*/
+    /*-----------Crear producto---------------*/
+    .boton-enviar-producto {
+        margin: 5% 0 5% 35%;
+    }
+
+    /*-----------Login y registro---------------*/
     .logo-img{
         width: 150px;
     }
 
-    .form {
-        margin: 2% 0 0 20%;
+    .lista-iconos-registro{
+        margin: 20px 0 25px 0;
     }
 
-    .form__primera-seccion {
-        text-align: center;
-        color: #333;
+    .iconos-facebook, .iconos-twitter, .iconos-instagram{
+        margin: 0 50px;
+        padding: 8px 12px;
     }
 
+    /*-----------Inicio login---------------*/
     .form__input-login {
         width: 50%;
     }
@@ -1362,20 +1247,12 @@ select {
     .form__boton-enviar {
         width: 200px;
     }
+
     .form__tercera-seccion {
         gap: 50px;
     }
 
-    /*-----------Crear producto---------------*/
-    .boton-enviar-producto {
-        margin: 5% 0 5% 35%;
-    }
-
     /*-----------Inicio registro---------------*/
-    .logo-img{
-        width: 150px;
-    }
-
     .email-registro{
         padding-right:10.3%;
     }
@@ -1383,38 +1260,27 @@ select {
     .contraseña-registro{
         padding-right: 5.6%;
     }
-    .iconos-facebook, .iconos-twitter, .iconos-instagram{
-        margin: 0 50px;
-        padding: 8px 12px;
-    }
-
-    .lista-iconos-registro{
-        margin: 20px 0 25px 0;
-    }
 
     .button-crearCuenta{
-        width: 25%;
+        width: 200px;
     }
 
-    .input-fechaNacimiento{
+    /* .input-fechaNacimiento{
         text-align: center;
-    }
+    } */
 
     /*-----------ProductDetail---------------*/
     .main-detail{
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
-        /* align-items: ; */
         height: 460px;
     }
 
     .juego{
-        /* flex-wrap: wrap; */
         flex-direction: column;
         width: 40%;
         margin-left: 15px;
-        /* align-items: flex-start; */
         padding-left:20px;
         height: 100%;
     }
@@ -1422,20 +1288,6 @@ select {
     .cont-img__juego{
         border: none;
         width: 90%;
-    }
-
-    /* .plataformas{
-        position: static;
-        } */
-
-    .cont__consolas{
-        /* position: static; */
-        /* margin: 50px 0; */
-    }
-
-    .cont-ediciones__tipos{
-        /* margin: 50px 0;; */
-    
     }
 
     .detalles{
@@ -1453,10 +1305,6 @@ select {
         height: 50%;
     }
 
-    /* .stock{
-        height: 200px;
-    } */
-
     /*-----------Footer---------------*/
     .footer__primer-fila{
         flex-direction: row;
@@ -1471,11 +1319,6 @@ select {
         max-width: 50%;
         margin: 1% 0 0 25%;
         padding-bottom: 1%;
-    }
-
-    .form__primera-seccion {
-        text-align: center;
-        color: #333;
     }
 
     .form__input-login {
