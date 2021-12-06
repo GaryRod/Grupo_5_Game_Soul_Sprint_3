@@ -519,6 +519,7 @@
 .form__segunda-seccion {
     display: flex;
     flex-direction: column;
+    color: #333;
 }
 
 .form__contenedor-subtitulos {
@@ -1388,7 +1389,7 @@ select {
     }
 
     .lista-iconos-registro{
-        margin: 10px 0 25px 0;
+        margin: 20px 0 25px 0;
     }
 
     .button-crearCuenta{
