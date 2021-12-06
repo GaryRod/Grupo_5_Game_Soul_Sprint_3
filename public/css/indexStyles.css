@@ -1231,12 +1231,14 @@ select {
         font-size: 20px;
     }
 
-    .button-crearCuenta, .button-iniciarSesion {
+    .button-crearCuenta {
         width: 40%;
     }
-
+    .button-iniciarSesion{
+        font-size: 16px;
+    }
     .tenesCuenta-registro{
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .input-nombre, .input-email, .input-contraseña{
