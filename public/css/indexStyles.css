@@ -512,7 +512,10 @@
     color: #333;
 
 }
-
+.form__primera-seccion {
+    color: #333;
+    text-align: center;
+}
 .form__segunda-seccion {
     display: flex;
     flex-direction: column;
@@ -1198,6 +1201,11 @@ select {
         border-radius: 50px;
     }
 
+    .form__primera-seccion {
+        text-align: center;
+        color: #333;
+    }
+
     .form__tercera-seccion {
         flex-direction: row;
         gap: 50px;
@@ -1339,6 +1347,11 @@ select {
         margin: 2% 0 0 20%;
     }
 
+    .form__primera-seccion {
+        text-align: center;
+        color: #333;
+    }
+
     .form__input-login {
         width: 50%;
     }
@@ -1455,6 +1468,11 @@ select {
         max-width: 50%;
         margin: 1% 0 0 25%;
         padding-bottom: 1%;
+    }
+
+    .form__primera-seccion {
+        text-align: center;
+        color: #333;
     }
 
     .form__input-login {
