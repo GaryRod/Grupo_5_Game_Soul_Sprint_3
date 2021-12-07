@@ -855,43 +855,29 @@ select {
     margin-bottom: 10px;
 }
 
-.ps5{
+.ps5,.pc,.xbox{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40px;
     height: 40px;
     color: #eee;
-    text-shadow:2px 4px  4px rgba(0, 0, 0, 0.8) ;
-    border-radius: 50%;
     background-color: #eee;
-    box-shadow:2px 2px  2px 2px rgba(0, 0, 0, 0.4) ;
-}
-
-.xbox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    color: #eee;
-    border-radius: 50%;
-    background-color: rgb(21, 80, 21);
-    text-shadow:2px 4px  4px rgba(0, 0, 0, 0.8) ;
+    text-shadow:2px 4px 4px rgba(0, 0, 0, 0.8) ;
     box-shadow:2px 2px  2px 2px rgba(0, 0, 0, 0.4) ;
 }
 
 .pc{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    color: #eee;
     transform:perspective(150px) rotateY(-40deg);
-    background-color: #eee;
-    text-shadow:2px 4px 4px rgba(0, 0, 0, 0.8) ;
-    box-shadow:2px 2px  2px 2px rgba(0, 0, 0, 0.4) ;
+}
+
+.ps5{
+    border-radius: 50%;
+}
+
+.xbox{
+    border-radius: 50%;
+    background-color: rgb(21, 80, 21);
 }
 
 .img-logo__plataformas{

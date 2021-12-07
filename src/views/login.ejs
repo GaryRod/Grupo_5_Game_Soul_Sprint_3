@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include ('./partials/head') %> 
+<body class="body">
+    <main class="main--login">
+        <form action="/login" method="post" class="form">
+            <div class="logo">
+                <a href="/"><img src="/images/logo/Game-Soul.png" class="logo-img"></a>
+            </div>
+            <div class="form__primera-seccion">
+                <span class="form__subtitulo-span">Inicia sesión con tus redes sociales</span>
+                <ul class="lista-iconos-registro">
+                    <li class="iconos-facebook"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li class="iconos-twitter"><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                    <li class="iconos-instagram"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="form__primera-seccion">
+                <span>O</span>
+            </div>
+
+            <div class="form__segunda-seccion">
+                <div class="form__contenedor-subtitulos">
+                    <span class="form__subtitulo-login">Login</span>
+                    <span><a href="/register" class="form__subtitulo-a">Crear cuenta</a></span>
+                </div>
+                <div class="form__contenedor-inputs">
+                    <input type="text" class="form__input-login" placeholder="E-mail" name="email-login">
+                    <input type="password" class="form__input-login" placeholder="Contraseña" name="contrasenia-login">
+                </div>
+            </div>
+            <div class="form__tercera-seccion">
+                <div class="form__contenedor-checkbox">
+                    <input type="checkbox" id="recuerdame" class="form__boton-checkbox"><label for="recuerdame" class="form__span">Recuérdame</label>
+                </div>
+                <div class="form__contenedor-a">
+                    <a href="#" class="form__a">¿Olvidaste tu Contraseña?</a>
+                </div>
+            </div>
+            <div class="form__cuarta-seccion">
+                <input type="submit" value="Iniciar Sesión" class="form__boton-enviar">
+            </div>
+        </form>
+    </main>
+    
+    <%- include ('./partials/footer') %> 
+</body>
+</html>
