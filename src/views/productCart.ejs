@@ -1,49 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/indexStyles.css">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <title>Game Soul</title>
-</head>
+<%- include ('./partials/head') %> 
 <body class="body">
-    <header class="header">
-        <div class="header__primer-fila">
-            <div>
-                <a href="/"><img src="../images/logo/Game-Soul.png" alt="logo" class="header__logo"></a>
-            </div>
-
-            <form class="cont-search">
-                <input type="search" placeholder="Dime que juego buscas" class="cont-search__input" id="search">
-                <label for="search"><img src="../images/iconos/search.svg" class="cont-search__i"></label> 
-            </form>
-
-            <div class="cont-i">
-                <div class="cont-i__cont-lista-icono">
-                    <img src="../images/iconos/user.svg" class="cont-i__iconos con-i__iconos--user">
-                    <ul class="cont-i__lista">
-                        <li class="cont-i__items cont-i__items-logo"><a href="/login" class="cont-i__enlaces">Login</a></li>
-                        <li class="cont-i__items"><a href="/register" class="cont-i__enlaces">Register</a></li>
-                    </ul>
-                </div>
-                <a href="/productCart"><img src="../images/iconos/shop.svg" class="cont-i__iconos"></a>
-                <img src="../images/iconos/burger-menu.svg" class="cont-i__iconos cont-i__iconos--burger-menu">
-            </div>
-        </div>
-
-        <nav class="header__nav">
-            <ul class="header__lista">
-                <li class="header__items"><a href="" class="header__enlaces">Favoritos</a></li>
-                <li class="header__items"><a href="" class="header__enlaces">Ofertas</a></li>
-                <li class="header__items"><a href="" class="header__enlaces">Consolas</a></li>
-                <li class="header__items"><a href="" class="header__enlaces">Categorias</a></li>
-                <li class="header__items"><a href="" class="header__enlaces">Soporte</a></li>
-            </ul>
-        </nav>
-    </header>
+    <%- include('./partials/header')  %>
 
     <main class="main">
         <form method="POST" action>
@@ -142,32 +101,6 @@
         </form>
     </main>
 
-    <footer class="footer">
-        <div class="footer__primer-fila">
-            <ul class="footer__ul">
-                <li class="footer__li"><a href="#" class="footer__li-enlaces-generales">Legal</a></li>
-                <li class="footer__li"><a href="#" class="footer__li-enlaces-generales">Política</a></li>
-                <li class="footer__li"><a href="#" class="footer__li-enlaces-generales">Cookies</a></li>
-                <li class="footer__li"><a href="#" class="footer__li-enlaces-generales">Ayuda</a></li>
-                <li class="footer__li"><a href="#" class="footer__li-enlaces-generales">Nosotros</a></li>
-            </ul>
-
-            <ul class="footer__ul footer__ul--met-pago">
-                <li class="footer__li"><img src="../images/iconos/mastercard.svg" class="footer__li-met-pago"></li>
-                <li class="footer__li"><img src="../images/iconos/visa.svg" class="footer__li-met-pago"></li>
-                <li class="footer__li"><img src="../images/iconos/mercado-pago.svg" class="footer__li-met-pago"></li>
-                <li class="footer__li"><img src="../images/iconos/paypal.svg" class="footer__li-met-pago"></li>
-                <li class="footer__li"><img src="../images/iconos/google-pay.svg" class="footer__li-met-pago"></li>
-            </ul>
-        </div>
-
-        <ul class="footer__ul">
-            <li class="footer__li"><a href="#"><i class="fab fa-facebook footer__li-redes"></i></a></li>
-            <li class="footer__li"><a href="#"><i class="fab fa-twitter footer__li-redes"></i></a></li>
-            <li class="footer__li"><a href="#"><i class="fab fa-instagram footer__li-redes"></i></a></li>
-            <li class="footer__li"><a href="#"><i class="fab fa-linkedin footer__li-redes"></i></a></li>
-            <li class="footer__li"><a href="#"><i class="fab fa-pinterest footer__li-redes"></i></a></li>
-        </ul>
-    </footer>
+    <%- include ('./partials/footer') %> 
 </body>
 </html>
