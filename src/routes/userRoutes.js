@@ -1,11 +1,9 @@
 const express = require('express');
-const userController = require('../controllers/userCointroller');
+const userController = require('../controllers/userController');
 const router = express.Router();
 
-const productController = require('../controllers/userCointroller');
+router.get('/login',userController.login)
 
-router.use('/login',userController.login)
-
-router.use('/register', userController.register)
+router.get('/register', userController.register)
 
 module.exports = router

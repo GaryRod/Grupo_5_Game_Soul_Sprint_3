@@ -3,7 +3,7 @@ const userController ={
         res.render('register')
     },
     login: (req, res) => {
-        res.render('login')
+        res.send('login')
     },
 
 }

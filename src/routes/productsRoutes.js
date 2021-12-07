@@ -4,12 +4,12 @@ const router = express.Router();
 const productController = require('../controllers/productController');
 
 /* Con readAll - LISTADO DE PRODUCTOS, RENDERIZA CATALOGO DE PRODUCTOS*/
-router.use('/', productController.index);
+router.get('/', productController.index);
 
 /* Con readDetail - LEE PRODUCTO SEGUN ID */
-router.use('/productDetail', productController.productDetail);
+router.get('/productDetail', productController.productDetail);
 
-router.use('/createProduct',productController.createProduct);
+router.get('/createProduct',productController.createProduct);
 
-router.use('/productCart', productController.productCart)
+router.get('/productCart', productController.productCart)
 module.exports = router
