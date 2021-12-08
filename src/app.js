@@ -10,16 +10,11 @@ app.set('view engine','ejs')
 app.set("views", path.resolve(__dirname, "./views"))
 
 
-
-
-
-
 app.use('/',productsRoutes)
-app.use('/productDetail',productsRoutes)
-app.use('/productCart',productsRoutes)
-app.use('/register',userRoutes)
-app.use('/login',userRoutes)
+
+app.use('/', userRoutes)
+
 
 app.listen(process.env.PORT || 3000, () => { 
     console.log("Servidor funcionando")
-    });
+});

@@ -3,8 +3,8 @@ const userController ={
         res.render('register')
     },
     login: (req, res) => {
-        res.send('login')
+        res.render('login')
     },
-
 }
-module.exports= userController
+
+module.exports = userController
