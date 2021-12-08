@@ -3,13 +3,16 @@ const productController = {
         res.render('index')
     },
     createProduct: (req, res) => {
-        res.render('createProudct')
+        res.render('createProduct')
     },
     productCart: (req, res) => {
         res.render('productCart')
     },
     productDetail: (req, res) => {
         res.render('productDetail')
+    },
+    editProduct: (req, res) => {
+        res.render('editProduct')
     }
 }
 
