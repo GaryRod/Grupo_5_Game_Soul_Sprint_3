@@ -52,171 +52,31 @@
         <section class="section-sec">
             <h3 class="section-sec__titulo">Basado en tu última visita</h3>
             <div class="section-sec__cont-arts">
-                <article class="section-sec__arts">
-                    <div class="section-sec__cont-picture-star">
-                        <picture class="section-sec__picture">
-                            <img src="../images/juegos/cyberpunk-2077-250px.jpg" alt="Cyber Punk 2077" class="section-sec__imgs">
-                        </picture>
-                        <div class="section-sec__cont-star">
-                            <i class="fas fa-star section-sec__star"></i>
-                        </div>
-                    </div>
 
-                    <div class="section-sec__cont-datos">
-                        <span class="section-sec__spans"><a href="" class="section-sec__titulo-enlace">Cyber Punk 2077</a></span>
-                        <span class="section-sec__spans">Precio</span>
-                        <span class="button-carrito">Añadir al carrito</span>
-                    </div>
-                </article>
+                <% listaJuegos.forEach(element => { %>
 
-                <article class="section-sec__arts">
-                    <div class="section-sec__cont-picture-star">
-                        <picture class="section-sec__picture">
-                            <img src="../images/juegos/fifa-22-250px.jpg" alt="Fifa 22" class="section-sec__imgs">
-                        </picture>
-                        <div class="section-sec__cont-star">
-                            <i class="fas fa-star section-sec__star"></i>
-                        </div>
-                    </div>
-                    <div class="section-sec__cont-datos">
-                        <span class="section-sec__spans"><a href="" class="section-sec__titulo-enlace">Fifa 22</a></span>
-                        <span class="section-sec__spans">Precio</span>
-                        <span class="button-carrito">Añadir al carrito</span>
-                    </div>
-                </article>
+                    <article class="section-sec__arts">
 
-                <article class="section-sec__arts">
-                    <div class="section-sec__cont-picture-star">
-                        <picture class="section-sec__picture">
-                            <img src="../images/juegos/forza-horizon-5-250px.jpg" alt="Forza Horizon" class="section-sec__imgs">
-                        </picture>
-                        <div class="section-sec__cont-star">
-                            <i class="fas fa-star section-sec__star"></i>
+                        <div class="section-sec__cont-picture-star">
+                            <picture class="section-sec__picture">
+                                <img src="../images/juegos/<%= element.img %>" alt="Cyber Punk 2077" class="section-sec__imgs">
+                            </picture>
+                            <div class="section-sec__cont-star">
+                                <i class="fas fa-star section-sec__star"></i>
+                            </div>
                         </div>
-                    </div>
-                    <div class="section-sec__cont-datos">
-                        <span class="section-sec__spans"><a href="" class="section-sec__titulo-enlace">Forza Horizon</a></span>
-                        <span class="section-sec__spans">Precio</span>
-                        <span class="button-carrito">Añadir al carrito</span>
-                    </div>
-                </article>
 
-                <article class="section-sec__arts">
-                    <div class="section-sec__cont-picture-star">
-                        <picture class="section-sec__picture">
-                            <img src="../images/juegos/battlefield.jpg" alt="Battlefield" class="section-sec__imgs">
-                        </picture>
-                        <div class="section-sec__cont-star">
-                            <i class="fas fa-star section-sec__star"></i>
+                        <div class="section-sec__cont-datos">
+                            <span class="section-sec__spans"><a href="/productDetail/<%= element.id %>" class="section-sec__titulo-enlace"><%= element.nombre %></a></span>
+                            <span class="section-sec__spans">$ <%= element.precio %></span>
+                            <span class="button-carrito">Añadir al carrito</span>
                         </div>
-                    </div>
-                    <div class="section-sec__cont-datos">
-                        <span class="section-sec__spans"><a href="" class="section-sec__titulo-enlace">Battlefield</a></span>
-                        <span class="section-sec__spans">Precio</span>
-                        <span class="button-carrito">Añadir al carrito</span>
-                    </div>
-                </article>
 
-                <article class="section-sec__arts">
-                    <div class="section-sec__cont-picture-star">
-                        <picture class="section-sec__picture">
-                            <img src="../images/juegos/age-of-empires-4-150px.jpg" alt="AOE 4" class="section-sec__imgs">
-                        </picture>
-                        <div class="section-sec__cont-star">
-                            <i class="fas fa-star section-sec__star"></i>
-                        </div>
-                    </div>
-                    <div class="section-sec__cont-datos">
-                        <span class="section-sec__spans"><a href="" class="section-sec__titulo-enlace">AOE 4</a></span>
-                        <span class="section-sec__spans">Precio</span>
-                        <span class="button-carrito">Añadir al carrito</span>
-                    </div>
-                </article>
-            </div>
-        </section>
+                        
+                    </article>
 
-        <section class="section__sec">
-            <h3 class="section-sec__titulo">Más buscados</h3>
-            <div class="section-sec__cont-arts">
-                <article class="section-sec__arts">
-                    <div class="section-sec__cont-picture-star">
-                        <picture class="section-sec__picture">
-                            <img src="../images/juegos/yakuza-kiwami-250px.jpg" alt="Yakuza Kiwami" class="section-sec__imgs">
-                        </picture>
-                        <div class="section-sec__cont-star">
-                            <i class="fas fa-star section-sec__star"></i>
-                        </div>
-                    </div>
-                    <div class="section-sec__cont-datos">
-                        <span class="section-sec__spans"><a href="" class="section-sec__titulo-enlace">Yakuza Kiwami</a></span>
-                        <span class="section-sec__spans">Precio</span>
-                        <span class="button-carrito">Añadir al carrito</span>
-                    </div>
-                </article>
-                
-                <article class="section-sec__arts">
-                    <div class="section-sec__cont-picture-star">
-                        <picture class="section-sec__picture">
-                            <img src="../images/juegos/inscryption-250px.jpg" alt="Inscription" class="section-sec__imgs">
-                        </picture>
-                        <div class="section-sec__cont-star">
-                            <i class="fas fa-star section-sec__star"></i>
-                        </div>
-                    </div>
-                    <div class="section-sec__cont-datos">
-                        <span class="section-sec__spans"><a href="" class="section-sec__titulo-enlace">Inscription</a></span>
-                        <span class="section-sec__spans">Precio</span>
-                        <span class="button-carrito">Añadir al carrito</span>
-                    </div>
-                </article>
-                
-                <article class="section-sec__arts">
-                    <div class="section-sec__cont-picture-star">
-                        <picture class="section-sec__picture">
-                            <img src="../images/juegos/ACValhalla-250px.jpg" alt="Assassin's Creed: Valhalla" class="section-sec__imgs">
-                        </picture>
-                        <div class="section-sec__cont-star">
-                            <i class="fas fa-star section-sec__star"></i>
-                        </div>
-                    </div>
-                    <div class="section-sec__cont-datos">
-                        <span class="section-sec__spans"><a href="#" class="section-sec__titulo-enlace">AC: Valhalla</a></span>
-                        <span class="section-sec__spans">Precio</span>
-                        <span class="button-carrito">Añadir al carrito</span>
-                    </div>
-                </article>
+                <% }) %>
 
-                <article class="section-sec__arts">
-                    <div class="section-sec__cont-picture-star">
-                        <picture class="section-sec__picture">
-                            <img src="../images/juegos/God_of_War-150px.jpg" alt="GOW 4" class="section-sec__imgs">
-                        </picture>
-                        <div class="section-sec__cont-star">
-                            <i class="fas fa-star section-sec__star"></i>
-                        </div>
-                    </div>
-                    <div class="section-sec__cont-datos">
-                        <span class="section-sec__spans"><a href="" class="section-sec__titulo-enlace">GOW 4</a></span>
-                        <span class="section-sec__spans">Precio</span>
-                        <span class="button-carrito">Añadir al carrito</span>
-                    </div>
-                </article>
-
-                <article class="section-sec__arts">
-                    <div class="section-sec__cont-picture-star">
-                        <picture class="section-sec__picture">
-                            <img src="../images/juegos/fifa-22-250px.jpg" alt="Fifa 22" class="section-sec__imgs">
-                        </picture>
-                        <div class="section-sec__cont-star">
-                            <i class="fas fa-star section-sec__star"></i>
-                        </div>
-                    </div>
-                    <div class="section-sec__cont-datos">
-                        <span class="section-sec__spans"><a href="" class="section-sec__titulo-enlace">Fifa 22</a></span>
-                        <span class="section-sec__spans">Precio</span>
-                        <span class="button-carrito">Añadir al carrito</span>
-                    </div>
-                </article>
             </div>
         </section>
     </main>

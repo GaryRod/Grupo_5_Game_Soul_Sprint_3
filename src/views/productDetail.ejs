@@ -11,11 +11,11 @@
     <main class="main main-detail">
         <section class="juego">
             <div class="nombre__juego">
-                <span>COD: Black Ops 4</span>
+                <span><%= juego.nombre %></span>
             </div>
 
             <div class="cont-img__juego">
-                <img src="../images/juegos/COD-Black-Ops-4-250px.jpg" alt="COD-Black-Ops-4" class="cont-img__img">
+                <img src="../images/juegos/<%= juego.img %>" alt="COD-Black-Ops-4" class="cont-img__img">
             </div>
 
             <div class="cont-ediciones-plataformas">
@@ -44,7 +44,7 @@
 
         <section class="detalles">
             <div class="detalles__primer-fila">
-                <div class="precio">$ 8,999.00</div>
+                <div class="precio">$ <%= juego.precio %></div>
     
                 <div class="cont__añadir" >
                     <button type="submit" class="añadir__carrito-fav">Añadir al carrito</button>
@@ -65,9 +65,7 @@
 
                 <div class="cont__detalles">
                     <p>
-                        Black Ops 4 es el primer título de la serie sin un modo de campaña tradicional 
-                        para un jugador. En cambio, presenta el modo de misiones en solitario, que se centra 
-                        en las historias de fondo de los personajes multijugador del juego, conocidos como "especialistas".
+                        <%= juego.descripcion %>
                     </p>
                 </div>
             </div>

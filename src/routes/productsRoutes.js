@@ -7,7 +7,7 @@ const productController = require('../controllers/productController');
 router.get('/', productController.index);
 
 /* Con readDetail - LEE PRODUCTO SEGUN ID */
-router.get('/productDetail', productController.productDetail);
+router.get('/productDetail/:juegoId', productController.productDetail);
 
 router.get('/createProduct',productController.createProduct);
 
