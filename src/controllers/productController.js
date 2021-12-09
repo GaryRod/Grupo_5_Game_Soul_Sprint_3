@@ -23,7 +23,7 @@ module.exports = productController
 
 const juegos = [
     {
-        id: 9,
+        id: 1,
         nombre: "Cyber Punk 2077",
         precio: "10.000",
         descripcion: "Cyberpunk 2077 es una historia de acción y aventura en mundo abierto ambientada en Night City, una megalópolis obsesionada con el poder, el glamur y la modificación corporal. Tu personaje es V, un mercenario que persigue un implante único que permite alcanzar la inmortalidad.",

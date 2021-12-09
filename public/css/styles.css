@@ -213,19 +213,21 @@
 .section-ppal__picture{
     min-width: 170px;
     width: 100%;
-    /* height: 100%; */
-
 }
 
 .section-ppal__img{
     width: 100%;
     height: 100%;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
 .section-ppal__datos-imgs-button{
     display: flex;
     flex-direction: column;
     background-color: #548ca8;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .section-ppal__datos{
@@ -784,12 +786,12 @@ select {
 .cont-img__juego{
     width: 80%;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .cont-img__img{
-    width: 100%;
-    max-height: 320px;
-    max-width: 250px;
+    height: 200px;
+    width: 200px;
 }
 
 .cont-ediciones-plataformas, .cont-plataformas{
@@ -1127,12 +1129,6 @@ select {
         max-width: 300px;
     }
 
-    /* Section sec */
-    /* .section-sec__cont-picture-star{
-        width: 150px;
-        height: 150px;
-    } */
-
     .section-sec__cont-star{
         left: -7px;
     }
@@ -1176,8 +1172,12 @@ select {
 
     .cont-img__juego{
         width: 50%;
-        text-align: center;
         border-right: solid 3px #334257;
+    }
+
+    .cont-img__img{
+        height: 250px;
+        width: 250px;
     }
 
     /*-----------Footer---------------*/
