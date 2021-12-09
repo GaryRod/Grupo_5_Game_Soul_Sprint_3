@@ -3,7 +3,7 @@ const productController = {
         res.render('index', { title: "Home" })
     },
     createProduct: (req, res) => {
-        res.render('createProudct', {title: "Crear Producto" })
+        res.render('createProduct', {title: "Crear Producto" })
     },
     productCart: (req, res) => {
         res.render('productCart', {title: "Carrito"})
