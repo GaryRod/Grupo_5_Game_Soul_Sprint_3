@@ -6,11 +6,11 @@ const path = require('path')
 
 
 app.use(express.static('public'));
-app.set('view engine','ejs')
+app.set('view engine', 'ejs')
 app.set("views", path.resolve(__dirname, "./views"))
 
 
-app.use('/',productsRoutes)
+app.use('/', productsRoutes)
 
 app.use('/', userRoutes)
 
