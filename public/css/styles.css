@@ -484,12 +484,7 @@
 }
 
 /*-----------Crear producto---------------*/
-.body--createProduct{
-    display: block;
-}
-
 .formCreateProduct {
-    width: 60%;
     background-color: #eee;
     border-radius: 50px;
     color: #000;
@@ -513,7 +508,7 @@
 }
 
 .boton-enviar-producto {
-    margin: 5% 0 5% 23%;
+    margin: 5% 0 5% 30%;
     padding: 2%;
     border-radius: 50px;
     transition: all 0.5s;
@@ -1144,7 +1139,7 @@ select {
 
     /*-----------Crear producto---------------*/
     .boton-enviar-producto {
-        margin: 5% 0 5% 28%;
+        margin: 5% 0 5% 20%;
     }
 
     /*-----------Login y registro---------------*/
@@ -1245,7 +1240,7 @@ select {
 
     /*-----------Crear producto---------------*/
     .boton-enviar-producto {
-        margin: 5% 0 5% 35%;
+        margin: 5% 0 5% 30%;
     }
 
     /*-----------Login y registro---------------*/

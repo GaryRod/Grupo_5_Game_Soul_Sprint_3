@@ -6,7 +6,17 @@
     
     <%- include('../partials/header')  %> 
 
-    <%- include ('../partials/createEditProduct') %> 
+    <main class="main main--createProduct">
+        <form action="" method="post" class="formCreateProduct animate__animated animate__fadeInDown">
+            
+            <%- include('../partials/createEditProduct')  %> 
+            
+    
+            <div class="form__seccion-inputCrear">
+                <input type="submit" class="boton-enviar-producto" value="Editar Producto">
+            </div>
+        </form>
+    </main> 
 
     <%- include ('../partials/footer') %> 
 </body>
