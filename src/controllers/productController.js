@@ -1,20 +1,20 @@
 const productController = {
     index: (req, res) => {
-        res.render('index', {title: "Home", listaJuegos: juegos})
+        res.render('./products/index', {title: "Home", listaJuegos: juegos})
     },
     createProduct: (req, res) => {
-        res.render('createProduct', {title: "Crear Producto" })
+        res.render('./products/createProduct', {title: "Crear Producto" })
     },
     productCart: (req, res) => {
-        res.render('productCart', {title: "Carrito"})
+        res.render('./products/productCart', {title: "Carrito"})
     },
     productDetail: (req, res) => {
         let juegoUnico = juegos.find(juego => juego.id == req.params.juegoId)
 
-        res.render('productDetail', {title: "Detalles", juego: juegoUnico})
+        res.render('./products/productDetail', {title: "Detalles", juego: juegoUnico})
     },
     editProduct: (req, res) => {
-        res.render('editProduct', {title: "Editar producto"})
+        res.render('./products/editProduct', {title: "Editar producto"})
     }
 }
 
